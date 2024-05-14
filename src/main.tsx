@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+
+import { StyledComponentsWrapper } from './components'
+import { Router } from "./routes/index.routes";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <StyledComponentsWrapper>
+      <Router />
+    </StyledComponentsWrapper>
   </React.StrictMode>,
 )

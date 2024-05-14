@@ -1,0 +1,1 @@
+export { StyledComponentsWrapper } from './StyledComponentsWrapper';

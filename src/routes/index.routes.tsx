@@ -4,7 +4,7 @@ import { Home } from "../pages";
 const routes = [
     <Route path="/" element={<Home />} />,
     <Route path="/gustavo-matias" element={<h1>Gustavo Matias</h1>} />,
-    <Route path="/nayara-pereira" element={<h1>Nayara Pereira</h1>} />,
+    <Route path="/nayara-felix" element={<h1>Nayara Felix</h1>} />,
     <Route path="/vinicius-lima" element={<h1>Vinicius Lima</h1>} />,
     <Route path="/yuri-cunha" element={<h1>Yuri Cunha</h1>} />,
     <Route path="*" element={<h1>Not found</h1>} />,

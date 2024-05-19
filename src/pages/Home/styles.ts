@@ -46,7 +46,7 @@ export const TeamSection = styled.section`
     padding: 0.8rem;
     margin-top: 2rem;
     font-size: 1.8rem;
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.white};
 
     ${({ theme }) => css`

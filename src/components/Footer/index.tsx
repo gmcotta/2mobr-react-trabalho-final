@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import * as S from './styles';
-import { teamMembers } from '../../content/teamMembers';
+import { teamMembers } from '../../content/TeamMembers';
 
 function Footer() {
     return (
         <S.Footer>
             <S.Logo>GNVY</S.Logo>
-            <Link to="tel:+55119987654321">+55 11 9987654321</Link>
+            <Link to="tel:+55119987654321">+55 11 998765-4321</Link>
             <Link to="mailto:contato@gnvy.com">contato@gnvy.com</Link>
             <nav>
                 {teamMembers.map((member) => (

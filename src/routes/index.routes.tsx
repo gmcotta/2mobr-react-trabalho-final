@@ -1,12 +1,13 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
-import { Home } from "../pages";
+import { Home, TeamMember } from "../pages";
+import { teamMembers } from "../content/TeamMembers";
 
 const routes = [
     <Route path="/" element={<Home />} />,
-    <Route path="/gustavo-matias" element={<h1>Gustavo Matias</h1>} />,
-    <Route path="/nayara-felix" element={<h1>Nayara Felix</h1>} />,
-    <Route path="/vinicius-lima" element={<h1>Vinicius Lima</h1>} />,
-    <Route path="/yuri-cunha" element={<h1>Yuri Cunha</h1>} />,
+    <Route path="/gustavo-matias" element={<TeamMember memberInfo={teamMembers[0]} />} />,
+    <Route path="/nayara-felix" element={<TeamMember memberInfo={teamMembers[1]} />} />,
+    <Route path="/vinicius-lima" element={<TeamMember memberInfo={teamMembers[2]} />} />,
+    <Route path="/yuri-cunha" element={<TeamMember memberInfo={teamMembers[3]} />} />,
     <Route path="*" element={<h1>Not found</h1>} />,
 ]
 

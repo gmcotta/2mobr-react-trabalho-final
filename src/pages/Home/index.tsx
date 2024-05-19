@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import * as S from './styles';
 import { Footer, Navbar } from "../../components";
-import { teamMembers } from "../../content/teamMembers";
+import { teamMembers } from "../../content/TeamMembers";
 
 function Home() {
     return (
@@ -20,7 +20,7 @@ function Home() {
                 <S.TeamList>
                     {teamMembers.map((member) => (
                         <S.TeamMember key={member.id}>
-                            <Link to={member.url}>
+                            <Link to={member.url} onClick={() => window.scrollTo(0,0)}>
                                 <img src={member.imageSrc} alt="" />
                                 <p>{member.name}</p>
                             </Link>

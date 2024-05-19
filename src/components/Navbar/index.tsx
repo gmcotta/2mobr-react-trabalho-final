@@ -4,7 +4,7 @@ import * as S from './styles';
 function Navbar() {
     return (
         <S.Navbar>
-            <Link to="/">GNVY</Link>
+            <Link to="/" onClick={() => window.scrollTo(0,0)}>GNVY</Link>
         </S.Navbar>
     )
 }
